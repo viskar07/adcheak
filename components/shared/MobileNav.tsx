@@ -24,13 +24,13 @@ export function MobileNavButton() {
         <div className="md:hidden">
             <Sheet>
                 <SheetTrigger asChild>
-                    <Button variant="outline">Open</Button>
+                    <Button variant="outline"><Image src="/icons/menu.png" width={30} height={30} alt="menu" /></Button>
                 </SheetTrigger>
                 <SheetContent side="bottom">
                     <SheetHeader>
                         <div className='flex items-center gap-2 top-0'>
                             <Image
-                                src="/logo.png"
+                                src="/icons/logo.png"
                                 width={28}
                                 height={28}
                                 alt='logo'
