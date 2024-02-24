@@ -21,6 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head><meta name="google-adsense-account" content="ca-pub-2415595862323011" /></head>
       <body className={inter.className}>
         <ThemeProvider 
           attribute="class" 
