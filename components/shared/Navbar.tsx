@@ -17,7 +17,7 @@ const Navbar = () => {
                 height={38}
                 alt='logo'
             />
-            <p className='text-xl'>Y3mate</p>
+            <p className='text-xl'>Y2matee</p>
         </div>
         <div className='hidden md:flex-center gap-6 items-center'>
             {NavLinks.map((items)=>{
