@@ -34,7 +34,7 @@ export const downloadDetilas = [
     },
     {
         label:'Best to download',
-        icon:'/icons/video.png ',
+        icon:'/icons/video.png',
         description:'The conversion and download speed is extremely fast. You do not need to wait long to get the MP3 or MP4 files.'
     },
 
@@ -47,7 +47,7 @@ export const mp3PageDetails = [
     },
     {
         label:'Full file format supported',
-        icon:'/icons/support.png ',
+        icon:'/icons/support.png',
         description:'We support all video and audio formats conversion. You can easily convert YouTube videos to MP3, 3GP, MP4, WMA, M4A, FLV, WEBM and MO formats, etc.'
     },
     {
