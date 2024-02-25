@@ -29,3 +29,15 @@ export function calculateFileSize(bitRate: number | undefined, durationMs: strin
 
 
 
+export const isValidUrl = (url: string) => {
+  try {
+      const parseUrl = new URL(url);
+      const hostname = parseUrl.hostname;
+      
+      if (hostname.includes('youtube.com')) {
+          return true;
+      }
+  } catch {
+      return false;
+  }
+}

@@ -21,7 +21,6 @@ const Hero = ({title,type,format}:{title:string,type:string,format:Filter}) => {
         try {
           const res = await fetch(`/api/data?url=${videoLink}`);
           const data = await res.json();
-          console.log(data);
           
           setDetails({image:data.videoDetails.thumbnails[4].url, title:data.videoDetails.title})
           
@@ -30,9 +29,21 @@ const Hero = ({title,type,format}:{title:string,type:string,format:Filter}) => {
           setdata(videoFormats);
         } catch (err) {
             setIsLoading(false)
-          console.log(err);
         }
       };
+    
+      const validator = () =>{
+        const regex = /youtube\.com|youtu\.be/;
+
+        if(regex.test(videoLink)){
+            handleDownload()
+        }
+        else{
+            alert('Plese enter correct URL')
+            setIsLoading(false)
+            
+        }
+      }
 
     
     return (
@@ -47,10 +58,12 @@ const Hero = ({title,type,format}:{title:string,type:string,format:Filter}) => {
                 <Button 
                     type="submit"
                      className="bg-gradient-to-r from-blue-500 to-purple-500"
-                    onClick={()=>{ handleDownload(); setIsLoading(true); }}
+                    onClick={()=>{ setIsLoading(true); validator();  }}
                 >Convert</Button>
+
                 
             </div>
+            
             <div className='wrapper flex justify-center items-center'>
             {isLoading===true && (
                    <Loader />
