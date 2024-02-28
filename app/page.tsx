@@ -7,15 +7,13 @@ import React from 'react'
 const Home = () => {
   return (
     <div className='wrapper'>
-      <Hero title="Youtube Downloader" type='video' format={'videoandaudio'} />
+      <Hero title="Instagram Downloader" />
       <div>
         <div className='w-full flex flex-col items-center gap-4 mt-12'>
 
-          <h2 className='gradient-green text-center'>The best YouTube Video Downloader</h2>
+          <h2 className='gradient-green text-center'>Instagram Videos and Photos Download</h2>
 
-          <p className='text-center text-lg'>Y2matee YouTube Downloader helps you download any YouTube video in the best quality.
-             Download YouTube videos in MP3, MP4, 3GP, M4A, and many more formats. Our downloader 
-             is for free and does not require any software or registration.
+          <p className='text-center text-lg'> InstaDL is an online web tool that helps you download Instagram Videos, Photos, Reels, and IGTV. InstaDL is designed to be easy to use on any device, such as a mobile phone, tablet, or computer.
           </p>
         </div>
 

@@ -7,11 +7,9 @@ import { ThemeProvider } from "@/components/shared/ThemeProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title:{
-    default:'Y2matee',
-    template:'%s  - Y3mate'
-  },
-  description: "Y2matee allows you to convert & download video from YouTube, Facebook, Video, Dailymotion, Youku, etc. to Mp3, Mp4 in HD quality. Y2mate supports downloading all video formats such as: MP4, M4V, 3GP, WMV, FLV, MO, MP3, WEBM, etc. You can easily download for free thousands of videos from YouTube and other websites.",
+  title:'InstaDl',
+  
+  description: "InstaDL is an online web tool that helps you download Instagram Videos, Photos, Reels, and IGTV. InstaDL is designed to be easy to use on any device, such as a mobile phone, tablet, or computer.",
 };
 
 export default function RootLayout({
@@ -21,7 +19,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head><meta name="google-adsense-account" content="ca-pub-2415595862323011" /></head>
       <body className={inter.className}>
         <ThemeProvider 
           attribute="class" 

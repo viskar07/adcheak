@@ -35,7 +35,7 @@ export function MobileNavButton() {
                                 height={28}
                                 alt='logo'
                             />
-                            <p className='text-xl'>Y3mate</p>
+                            <p className='text-xl'>InstaDL</p>
                         </div>
                             <SheetDescription>
                                 Y3mate YouTube Downloader helps you download 
