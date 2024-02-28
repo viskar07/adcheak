@@ -12,7 +12,7 @@ const Navbar = () => {
     <div className='wrapper flex justify-between'>
         <div className='flex items-center gap-2 '>
             <Image 
-                src="/icons/logo.png"
+                src="/logo.svg"
                 width={38}
                 height={38}
                 alt='logo'

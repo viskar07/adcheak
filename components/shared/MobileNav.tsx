@@ -30,7 +30,7 @@ export function MobileNavButton() {
                     <SheetHeader>
                         <div className='flex items-center gap-2 top-0'>
                             <Image
-                                src="/icons/logo.png"
+                                src="/logo.svg"
                                 width={28}
                                 height={28}
                                 alt='logo'
