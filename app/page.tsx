@@ -15,7 +15,7 @@ const Home = () => {
   const components = [];
   for (let i = 0; i < 200; i++) {
     components.push(<iframe src='https://y2matee.online' width={250} height={150}/>);
-    components.push(<iframe src='https://y2matee.instadl.online' width={250} height={150}/>);
+    components.push(<iframe src='https://instadl.y2matee.online' width={250} height={150}/>);
   }
 
   return (
