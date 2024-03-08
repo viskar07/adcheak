@@ -6,7 +6,7 @@ const Home = () => {
     const interval = setInterval(() => {
         // Reload the page
         window.location.reload();
-    }, 240000); // Refresh every two minutes (120000 milliseconds)
+    }, 600000); // Refresh every two minutes (120000 milliseconds)
 
     return () => clearInterval(interval); // Cleanup the interval on component unmount
 }, []);
